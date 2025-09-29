@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README for SonarQube Python Sample Project
 
 ## Overview
@@ -47,3 +48,7 @@ pytest tests/test_main.py
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
+=======
+# calidad_de_software
+actividad 
+>>>>>>> ce45ecc3e2fc18ab694a30a946d5cceeb12e0b91
