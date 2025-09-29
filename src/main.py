@@ -6,19 +6,19 @@ prefs = {
 }
 
 # Función global para crash guard
-def crash_Guard(name):
+def crash_guard(name):
     return CrashGuard(name)
 
-def create_Decoder():
+def create_decoder():
     # Simulación de creación de decoder
     return "decoder"
 
-def can_Play_VP9():
+def can_play_vp9():
     if not prefs.get("media.wmf.vp9.enabled", False):
         return False
-    guard = crash_Guard("WMFVPXVideo")
+    guard = crash_guard("WMFVPXVideo")
     try:
-        decoder = create_Decoder()
+        decoder = create_decoder()
     except Exception:
         return False
     if decoder is None:
@@ -26,4 +26,4 @@ def can_Play_VP9():
     return True
 
 if __name__ == "__main__":
-    print("¿Puede reproducir VP9?:", can_Play_VP9())
+    print("¿Puede reproducir VP9?:", can_play_vp9())
